@@ -69,7 +69,7 @@ module AmazonProductAdvertisingApi #:nodoc:
         end
         
         # ItemSearch requires keywords and a search index to be specified.
-        def initialize(keywords, search_index = "Books", region = :uk)
+        def initialize(keywords, search_index = "Books", region = :us)
           super()
 
           self.keywords     = keywords
@@ -94,7 +94,7 @@ module AmazonProductAdvertisingApi #:nodoc:
         end
         
         # ItemLookup only requires an item id (ASIN) to be specified.
-        def initialize(item_id, region = :uk)
+        def initialize(item_id, region = :us)
           super
           
           self.item_id   = item_id
@@ -119,7 +119,7 @@ module AmazonProductAdvertisingApi #:nodoc:
         end
         
         # SimilarityLookup only requires an item id (ASIN) to be specified.
-        def initialize(item_id, region = :uk)
+        def initialize(item_id, region = :us)
           super()
           
           self.item_id   = item_id
