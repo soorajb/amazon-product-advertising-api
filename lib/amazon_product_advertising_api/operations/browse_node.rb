@@ -12,7 +12,7 @@ module AmazonProductAdvertisingApi #:nodoc:
         end
         
         # BrowseNodeLookup only requires a browse_node_id to be specified.
-        def initialize(browse_node_id, region = :uk)
+        def initialize(browse_node_id, region = :us)
           super()
 
           self.browse_node_id = browse_node_id
